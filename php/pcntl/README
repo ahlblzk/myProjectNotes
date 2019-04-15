@@ -1,0 +1,5 @@
+posix_getpid()：获取当前进程的pid;
+
+pcntl_fork:在当前进程当前位置产生分支（子进程）。此函数创建了一个新的子进程后，子进程会继承父进程当前的上下文，和父进程一样从pcntl_fork()函数处继续向下执行，只是获取到的pcntl_fork()的返回值不同，返回-1说明创建失败，返回0说明是子进程，返回一个进程号说明是父进程。
+
+cli_set_process_title('this is parent process')：为当前进程取一个名字。
