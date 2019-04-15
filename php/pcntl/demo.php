@@ -1,5 +1,5 @@
 <?php
-
+// 多进程示例
 $ppid = posix_getpid();
 $pid = pcntl_fork();
 if ($pid == -1) {
